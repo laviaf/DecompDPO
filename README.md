@@ -20,22 +20,8 @@ pip install git+https://github.com/Valdes-Tresanco-MS/AutoDockTools_py3.git
 
 ## Data Preparation
 
-We release the processed data and checkpoints on Hugging Face: [Annie37/DecompDPO](https://huggingface.co/datasets/Annie37/DecompDPO/tree/main).
-
-1. Download the released folders (requires `git-lfs`):
-
-```bash
-git lfs install
-git clone https://huggingface.co/datasets/Annie37/DecompDPO hf_decompdpo
-```
-
-2. Copy (or symlink) them into this repo root:
-
-```bash
-ln -s "$(pwd)/hf_decompdpo/data" data
-ln -s "$(pwd)/hf_decompdpo/checkpoints" checkpoints
-```
-
+We release the processed data and checkpoints on Hugging Face: [DecompDPO](https://huggingface.co/datasets/Annie37/DecompDPO/tree/main).
+Download the released folders and copy them into this repo root.
 If you want to **pre-train DecompDiff\*** from scratch, our data preparation follows the [DecompDiff](https://github.com/bytedance/DecompDiff) pipeline for CrossDocked2020 (i.e., you can reproduce `data/` by following DecompDiff’s preprocessing steps and matching the layout above).
 
 ## Pipeline
